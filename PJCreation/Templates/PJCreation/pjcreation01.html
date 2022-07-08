@@ -1,0 +1,146 @@
+{% extends "RolCCApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div style="width: 40%; margin: auto; background-color: rgba(0, 0, 0, 0.7); margin-top: 20px; margin-bottom: 20px; padding: 20px; border: 2px solid white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="table-responsive">
+                    <form action="pjcreation01create/" method="POST"> {% csrf_token %}
+                        <table class="table table-striped" style="color: white; background-color: rgba(0, 0, 0, 0.3);">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" style="text-align: center;"><h4>D A T O S &nbsp;&nbsp;  B Á S I C O S</h4></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><label>Nombre PJ</label></td>
+                                    <td><input type="text" id="NombrePJ" placeholder="Ej: Eitri"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Género</label></td>
+                                    <td><select name="genero" id="Genero"> <option value="M">Masculino</option> <option value="F">Femenino</option> </select></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Estatura (mts)</label></td>
+                                    <td><input type="number" id="Estatura" placeholder="Ej: 1.30" step="0.01" value="1.50"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Peso (kg.)</label></td>
+                                    <td><input type="number" id="Peso" placeholder="Ej: 85"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Raza</label></td>
+                                    <td><select name="Raza" id="Raza">
+                                        <option value="Enano">Enano</option>
+                                        <option value="Umli">Umli</option>
+                                        <option value="Elfos Noldor">Elfos Noldor</option>
+                                        <option value="Elfos Sindar">Elfos Sindar</option>
+                                        <option value="Elfos Silvano">Elfos Silvano</option>
+                                        <option value="Medio Elfos">Medio Elfos</option>
+                                        <option value="Hobbit">Hobbit</option>
+                                        <option value="Beórnidas">Beórnidas</option>
+                                        <option value="Núm. Negros">Núm. Negros</option>
+                                        <option value="Corsarios">Corsarios</option>
+                                        <option value="Dorwinrim">Dorwinrim</option>
+                                        <option value="Dúnedain">Dúnedain</option>
+                                        <option value="Dunledinos">Dunledinos</option>
+                                        <option value="Hombres del Este">Hombres del Este</option>
+                                        <option value="Haradrim del Norte">Haradrim del Norte</option>
+                                        <option value="Haradrim del Sur">Haradrim del Sur</option>
+                                        <option value="Lossoth">Lossoth</option>
+                                        <option value="Rohirrim">Rohirrim</option>
+                                        <option value="Campesinos">Campesinos</option>
+                                        <option value="Burgueses">Burgueses</option>
+                                        <option value="Variags">Variags</option>
+                                        <option value="H. de los Bosques">H. de los Bosques</option>
+                                        <option value="Woses">Woses</option>
+                                        <option value="Orcos">Orcos</option>
+                                        <option value="Uruk-Hai">Uruk-Hai</option>
+                                        <option value="Medio Orcos">Medio Orcos</option>
+                                        <option value="Trolls">Trolls</option>
+                                        <option value="Olog-Hai">Olog-Hai</option>
+                                        <option value="Medio Trolls">Medio Trolls</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Edad</label></td>
+                                    <td><input type="number" id="Edad" placeholder="Ej: 22" value="18"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Pelo</label></td>
+                                    <td><input type="text" id="Pelo" placeholder="Ej: Rojo"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Ojos</label></td>
+                                    <td><input type="text" id="Ojos" placeholder="Ej: Celestes"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Especial Físico</label></td>
+                                    <td><input type="text" id="Especial Fisico" placeholder="Ej: Cicatriz en X"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Personalidad</label></td>
+                                    <td><input type="text" id="Personalidad" placeholder="XXXXXXXX"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Motivacion</label></td>
+                                    <td><input type="text" id="Motivacion" placeholder="Ej: Buscar al asesino de mi padre"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Alineamiento</label></td>
+                                    <td><select name="Alineamiento" id="Alineamiento">
+                                        <option value="Legal Bueno">Legal Bueno</option>
+                                        <option value="Legal Neutral">Legal Neutral</option>
+                                        <option value="Legal Malo">Legal Malo</option>
+                                        <option value="Neutral Bueno">Neutral Bueno</option>
+                                        <option value="Neutral Neutral">Neutral Neutral</option>
+                                        <option value="Neutral Malo">Neutral Malo</option>
+                                        <option value="Caótico Bueno">Caótico Bueno</option>
+                                        <option value="Caótico Neutral">Caótico Neutral</option>
+                                        <option value="Caótico Malo">Caótico Malo</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Status</label></td>
+                                    <td><input type="text" id="Status" placeholder="Ej: Fugitivo del reino"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label >Profesion</label></td>
+                                    <td><select name="Profesion" id="Profesion">
+                                        <option value="Guerrero">Guerrero</option>
+                                        <option value="Montaraz">Montaraz</option>
+                                        <option value="Explorador">Explorador</option>
+                                        <option value="Mago">Mago</option>
+                                        <option value="Animista">Animista</option>
+                                        <option value="Bardo">Bardo</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Dominio Mágico</label></td>
+                                    <td><select name="Dominio Mágico" id="Dominio Mágico"> <option value="E">Esencia</option> <option value="C">Canalización</option> </select></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-success">&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siguiente&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
