@@ -1,0 +1,121 @@
+{% extends "CreacionPJ/base.html" %}
+
+{% load static %}
+
+{% load custom_tags %}
+
+{% block content %}
+
+<div class="Conteiner06">
+    <table class="Tabla_SYI">
+        <thead>
+            <tr>
+                {% if sortilegios == "True" %}
+                <th colspan="10"><h2>IDIOMAS Y SORTILEGIOS</h2></th>
+                {% else %}
+                <th colspan="10"><h2>IDIOMAS</h2></th>
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody>
+            <form action="{% url 'Salida' %}" method="POST"> {% csrf_token %} 
+                {% if sortilegios == "True" %}
+                    <tr>
+                        <td colspan="10">
+                            <div class="label">
+                                {{ form1.lista.label_tag }}
+                            </div>
+                            <div class="select">
+                                {{ form1.lista }}
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="10">
+                            <div class="label">
+                                Idiomas: 
+                            <div>
+                        </td>
+                    </tr>
+                {% else %}
+                <input type="hidden" name="lista" value="0">
+                {% endif %}
+                <tr>
+                    <td colspan="10">
+                        <div class="label">
+                            Grados a distribuir: {{ grados_idioma }} 
+                        <div>
+                    </td>
+                </tr>
+                {% for idioma in idiomas %}
+                    <tr>
+                        <td colspan="4" id="ColIdioma">
+                            <div class="select">
+                               <h3> {{ idioma.0 }} </h3>
+                            <div>
+                        </td>
+                        <td colspan="1">
+                            <div class="select">
+                               <h2> {{ idioma.1 }} </h2>
+                            <div>
+                        </td>z
+                        <td></td>
+                        <td></td>
+
+                        {% if idioma.1 == idiomas_original|get_item:idioma.0 %}
+                        <td colspan="2" class="celda_boton_ph"><a href="{% url 'Restar' idioma.0 %}"><button type="button" class="boton_ph" disabled>-</button></a></td>
+                        {% else %}
+                        <td colspan="2" class="celda_boton_ph"><a href="{% url 'Restar' idioma.0 %}"><button type="button" class="boton_ph">-</button></a></td>
+                        {% endif %}
+
+                        {% if idioma.1 == 5 or grados_idioma == 0  %}
+                        <td colspan="2" class="celda_boton_ph"><a href="{% url 'Agregar' idioma.0 %}"><button type="button" class="boton_ph" disabled>+</button></a></td>
+                        {% else %}
+                        <td colspan="2" class="celda_boton_ph"><a href="{% url 'Agregar' idioma.0 %}"><button type="button" class="boton_ph">+</button></a></td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}   
+                <tr>
+                    {% if grados_idioma == 0  %}
+                    <td colspan="10" id="celda_btn_success"><button type="submit" class="btn-success">SIGUIENTE</button></td>
+                    {% else %}
+                    <td colspan="10" id="celda_btn_success"><button type="submit" class="btn-success" disabled>SIGUIENTE</button></td>
+                    {% endif %}
+                </tr>
+
+                <input type="hidden" name="idiomas" value="{{ idiomas }}">
+                <input type="hidden" name="nombre_pj" value="{{ nombre_pj }}">
+                <input type="hidden" name="usuario" value="{{ usuario }}">
+                <input type="hidden" name="nivel" value="{{ nivel }}">
+                <input type="hidden" name="dominio" value="{{ dominio }}">
+                <input type="hidden" name="profesion" value="{{ profesion }}">
+                <input type="hidden" name="sortilegios" value="{{ sortilegios }}">
+
+            </form>
+            
+            <form action="{% url 'AgregarIdioma' %}" method="POST"> {% csrf_token %} >
+                <tr>
+                    <td colspan="4" class="ColIdioma">
+                        <div class="select" id="idioma_label">
+                            <h3> {{ form2.idiomas.label_tag }} </h3>
+                        <div>
+                    </td>
+                    <td colspan="3">
+                        <div class="select" id="idioma_lista">
+                            <h3> {{ form2.idiomas }} </h3>
+                        <div>
+                    </td>
+                    {% if grados_idioma == 0  %}
+                    <td colspan="3" id="celda_btn_success"><button type="submit" class="btn-success" disabled>OK</button></td>
+                    {% else %}
+                    <td colspan="3" id="celda_btn_success"><button type="submit" class="btn-success">OK</button></td>
+                    {% endif %}
+    
+                </tr>                 
+            </form>
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "CreacionPJ/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div class="Conteiner01">
+    <table class="RazaYProfesion">
+        <thead>
+            <tr>
+                <th colspan="2"><h2> RAZA Y PROFESIÓN</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <form action="{% url 'PJCreation05' %}" method="POST"> {% csrf_token %}
+                <tr>
+                    <td class="Col1">{{ form.raza.label_tag }}</td>
+                    <td class="Col2">{{ form.raza }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.profesion.label_tag }}</td>
+                    <td class="Col2">{{ form.profesion }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.dominio_magico.label_tag }}</td>
+                    <td class="Col2">{{ form.dominio_magico }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="celda_btn_success"><button type="submit" class="btn-success">SIGUIENTE</button></td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}

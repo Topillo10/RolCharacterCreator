@@ -1,0 +1,57 @@
+{% extends "CreacionPJ/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="Conteiner05">
+    <table class="Tabla_MHYS">
+        <thead>
+            <tr>
+                <th colspan=2><h2>MANO HABIL Y SORTILEGIOS</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <form action="{% url 'PJCreation06' %}" method="POST"> {% csrf_token %}
+                <tr>
+                    <div class="celda_boton_mhys_0">
+                        <td class="celda_boton_mhys_1"><div class="boton_mhys">Mano Hábil</div></td>
+                        <td class="celda_boton_mhys_2"><h3 class="num_mhys">{{ mano_habil }}</h3></td>
+                    </div>
+                </tr>
+                <tr>
+                    <td colspan=2 class="celda_boton_mhys_3"><h5 class="text_mhys">{{ mano_habil_text }}</h5></td>
+                </tr>
+                <tr>
+                    <td class="celda_boton_mhys_1"><div class="boton_mhys">Sortilegios por Raza<br>( {{ prob_sort }}% )</div></td>
+                    <td class="celda_boton_mhys_2"><h3 class="num_mhys">{{ sortilegio_raza }}</h3></td>
+                </tr>
+                {% if prob_sort >= sortilegio_raza %}
+                <tr>
+                    <td colspan=2 class="celda_boton_mhys_3"><h5 class="text_mhys">Tu personaje aprendió magia durante la adolescencia</h5></td>
+                </tr>
+                <input type="hidden" name="sortilegios" value="True">
+                {% else %}
+                <tr>
+                    <td colspan=2 class="celda_boton_mhys_3"><h5 class="text_mhys">Tu personaje no aprendió magia durante la adolescencia</h5></td>
+                </tr>
+                <input type="hidden" name="sortilegios" value="False">
+                {% endif %}
+                <input type="hidden" name="nombre_pj" value="{{ personaje.1.0 }}">
+                <input type="hidden" name="usuario" value="{{ personaje.1.1 }}">
+                <input type="hidden" name="profesion" value="{{ personaje.1.15 }}">
+                <input type="hidden" name="nivel" value="{{ personaje.1.16 }}">
+                <input type="hidden" name="dominio" value="{{ personaje.1.17 }}">
+                <input type="hidden" name="prob_sort" value="{{ prob_sort }}">
+                <input type="hidden" name="raza" value="{{ personaje.1.2 }}">
+                <input type="hidden" name="grados_idioma" value="{{ razas_t1.idiomas }}">
+                <tr>
+                    <td colspan="2" id="celda_btn_success"><button type="submit" class="btn-success">SIGUIENTE</button></td>
+                </tr>               
+            </form>
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,89 @@
+<html>
+
+<head>
+
+    {% load static %}
+    
+    <!-- Styles -->
+    <link href="{% static 'CreacionPJ/css/Style.css' %}" rel="stylesheet">
+    <link href="{% static 'PuntosHistorial/css/Style.css' %}" rel="stylesheet">
+
+     <!-- Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+</head>
+
+<body>
+  <span><h1 class="Titulo">RPG Characters Creator</h1></span>
+  <nav class="NavBar">
+    <div>
+        <ul>
+            <li> <a class="Items_NavBar {% if request.path == '/' %} active {% endif %}" href="{% url 'Home' %}">Home</a> </li>
+            <li> <a class="Items_NavBar {% if request.path == '/levelup' %} active {% endif %}" href="{% url 'LevelUp' %}">Level Up</a></li>                        
+            <li> <a class="Items_NavBar {% if request.path == '/pjcreation01' %} active {% endif %}" href="{% url 'PJCreation01' %}">PJ Creation</a></li>
+            <li> <a class="Items_NavBar {% if request.path == '/search' %} active {% endif %}" href="{% url 'Search' %}">Search</a></li>
+            <li> <a class="Items_NavBar {% if request.path == '/news' %} active {% endif %}" href="{% url 'News' %}">Middle Earth's News</a></li>
+        </ul>
+    </div>
+  </nav>
+
+</header>
+  
+
+</body>
+
+
+
+    <!-- Contenido cambiante -->
+  
+  
+    {% block content %}
+
+    
+    {% endblock %}
+
+
+
+    <!-- Footer -->
+<body>
+    <footer>
+      <div class="Pie_de_Pagina">
+        <p class="m-0">  
+          <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	        
+          <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	        
+          <a href="#" class="link">
+	          <span class="fa-stack fa-lg">
+	            <i class="fa fa-circle fa-stack-2x"></i>
+	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+	          </span>
+	        </a>
+	      </p>
+
+        <p class="m-0 mbt">
+        	<a href="sample.html" class="link">Privacy policy</a> ·
+        	<a href="sample.html" class="link">Legal</a> ·
+        	<a href="sample.html" class="link">Cookies</a>
+		    </p>
+        
+        <p class="m-0 mbt1">&copy; RPG Character Creator 2022</p>
+      </div>
+	  </footer>
+
+    <script src="{% static 'CreacionPJ/js/Script.js' %}"></script>
+
+</body>
+
+</html>

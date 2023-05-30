@@ -1,0 +1,54 @@
+{% extends "CreacionPJ/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="Conteiner02">
+    <table class="Tabla_Tiradas">
+        <thead>
+            <tr>
+                <th colspan="2"><h2>CARACTERISTICAS</h2></th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr>
+                <td><h3>{{ tirada1.0 }}</h3></td>
+                <td><h3>{{ tirada2.0 }}</h3></td>
+            </tr>
+            <tr>
+                <td><h3>{{ tirada1.1 }}</h3></td>
+                <td><h3>{{ tirada2.1 }}</h3></td>
+            </tr>
+            <tr>
+                <td><h3>{{ tirada1.2 }}</h3></td>
+                <td><h3>{{ tirada2.2 }}</h3></td>
+            </tr>
+            <tr>
+                <td><h3>{{ tirada1.3 }}</h3></td>
+                <td><h3>{{ tirada2.3 }}</h3></td>
+            </tr>
+            <tr>
+                <td><h3>{{ tirada1.4 }}</h3></td>
+                <td><h3>{{ tirada2.4 }}</h3></td>
+            </tr>
+            <tr>
+                <td><h3>{{ tirada1.5 }}</h3></td>
+                <td><h3>{{ tirada2.5 }}</h3></td>
+            </tr>
+            <tr>
+                <td><h3>{{ tirada1.6 }}</h3></td>
+                <td><h3>{{ tirada2.6 }}</h3></td>
+            </tr>
+            <tr>
+                <td><a href="{% url 'ElegirT1' %}"><button type="button" name="elegir1" id="elegir1" class="btn-success">Elegir</button></a></td>
+                <td><a href="{% url 'ElegirT2' %}"><button type="button" name="elegir2" id="elegir2" class="btn-success">Elegir</button></a></td>
+            </tr>
+            <tr>
+                <td colspan="2"><a href="{% url 'ElegirT3' %}"><button name="elegir3" id="elegir3" class="btn-success">3ra Tirada</button></a></td>                              
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

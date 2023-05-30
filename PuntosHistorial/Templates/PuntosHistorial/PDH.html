@@ -1,0 +1,62 @@
+
+{% extends "CreacionPJ/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<link href="{% static 'PuntosHistorial/css/Style.css' %}" rel="stylesheet">
+
+<div class="Conteiner05">
+    <table class="Tabla_PDH">
+        <thead>
+            <tr>
+                <th><h2>PUNTOS DE HISTORIAL</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <form method="POST"> {% csrf_token %}
+                <tr>
+                    <td class="celda_boton_ph"><button id="hab_esp" type="submit" class="boton_ph">Habilidades Especiales</button></td>
+                </tr>
+            </form>
+            <form method="POST"> {% csrf_token %}
+                <tr>
+                    <td class="celda_boton_ph"><button id="obj_esp" type="submit" class="boton_ph">Objetos Especiales</button></td>
+                </tr>
+            </form>
+            <form method="POST"> {% csrf_token %}
+                <tr>
+                    <td class="celda_boton_ph"><button id="dinero" type="submit" class="boton_ph">Dinero</button></td>
+                </tr>
+            </form>
+            <form method="POST"> {% csrf_token %}
+                <tr>
+                    <td class="celda_boton_ph"><button id="idioma" type="submit" class="boton_ph">Idioma</button></td>
+                </tr>
+            </form>
+            <form method="POST"> {% csrf_token %}
+                <tr>
+                    <td class="celda_boton_ph"><button id="car1" type="submit" class="boton_ph">(+1) a tres Caracteristicas</button></td>
+                </tr>
+            </form>
+            <form method="POST"> {% csrf_token %}
+                <tr>
+                    <td class="celda_boton_ph"><button id="car2" type="submit" class="boton_ph">(+2) a una Caracteristicas</button></td>
+                </tr>
+            </form>
+            <form method="POST"> {% csrf_token %}
+                <tr>
+                    <td class="celda_boton_ph"><button id="hab_prim" type="submit" class="boton_ph">2 Grados a Hab. Primaria</button></td>
+                </tr>
+            </form>
+            <form method="POST"> {% csrf_token %}
+                <tr>
+                    <td class="celda_boton_ph"><button id="hab_sec" type="submit" class="boton_ph">5 Grados a Hab. Secundaria</button></td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "CreacionPJ/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+<div class="Conteiner03">
+    <form action="{% url 'PJCreation04' %}" method="POST"> {% csrf_token %}
+        <table class="Seleccion_Caracteristicas">
+            <thead>
+                <tr>
+                    <th colspan="2"><h2>CARACTERISTICAS</h2></th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr>
+                    <td class="Col1">{{ form.caract1 }}</td>
+                    <td class="Col2"><h3>{{ tirada_elegida.0 }}</h3></td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.caract2 }}</td>
+                    <td class="Col2"><h3>{{ tirada_elegida.1 }}</h3></td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.caract3 }}</td>
+                    <td class="Col2"><h3>{{ tirada_elegida.2 }}</h3></td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.caract4 }}</td>
+                    <td class="Col2"><h3>{{ tirada_elegida.3 }}</h3></td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.caract5 }}</td>
+                    <td class="Col2"><h3>{{ tirada_elegida.4 }}</h3></td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.caract6 }}</td>
+                    <td class="Col2"><h3>{{ tirada_elegida.5 }}</h3></td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.caract7 }}</td>
+                    <td class="Col2"><h3>{{ tirada_elegida.6 }}</h3></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="celda_btn_success"><button id="next" disabled="true" type="submit" class="btn btn-success">Siguiente</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends "CreacionPJ/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="Conteiner_cons">
+    <table class="Tabla_cons">
+        <thead>
+            <tr>
+                <th colspan="2">CONSOLIDACIÓN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="Col1"><h5>CARACTERÍSTICAS</h5></td>
+                <td class="Col2"><h5>
+                {% for key, value in caracteristicas.items %}
+                {{ key }}:{{ value }}<br>
+                {% endfor %}
+                </h5></td>
+            </tr>
+            <tr>
+                <td class="Col1"><h5>RAZA Y PROFESIÓN</h5></td>
+                <td class="Col2"><h5>
+                {% for key, value in datos_basicos02.items %}
+                {{ key }}:{{ value }}<br>
+                {% endfor %}
+                </h5></td>
+            </tr>
+            <tr>
+                <td class="Col1"><h5>DATOS BÁSICOS</h5></td>
+                <td class="Col2"><h5>
+                {% for key, value in datos_basicos01.items %}
+                {{ key }}:{{ value }}<br>
+                {% endfor %}
+                </h5></td>
+            </tr>
+            <tr>
+                <td class="Col1"><h5>RAZAS TABLA 1</h5></td>
+                <td class="Col2"><h5>
+                {% for key, value in razas_t1.items %}
+                {{ key }}:{{ value }}<br>
+                {% endfor %}
+                </h5></td>
+            </tr>
+            <tr>
+                <td class="Col1"><h5>RAZAS TABLA 2</h5></td>
+                <td class="Col2"><h5>
+                {% for key, value in razas_t2.items %}
+                {{ key }}:{{ value }}<br>
+                {% endfor %}
+                </h5></td>
+            </tr>
+            <tr>
+                <td class="Col1"><h5>RAZAS TABLA 3</h5></td>
+                <td class="Col2"><h5>
+                {% for key, value in razas_t3.items %}
+                {{ key }}:{{ value }}<br>
+                {% endfor %}
+                </h5></td>
+            </tr>
+            <tr>
+                <td class="Col1"><h5>RAZAS TABLA 4</h5></td>
+                <td class="Col2"><h5>
+                {% for key, value in razas_t4.items %}
+                {{ key }}:{{ value }}<br>
+                {% endfor %}
+                </h5></td>
+            </tr>
+            <tr>
+                <td class="Col1"><h5>PROFESIONES</h5></td>
+                <td class="Col2"><h5>
+                {% for key, value in prof_t1.items %}
+                {{ key }}:{{ value }}<br>
+                {% endfor %}
+                </h5></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

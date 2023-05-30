@@ -1,0 +1,707 @@
+[
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Enaltecimiento Físico",
+    "dominio":"Esencia",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Mano de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Ilusiones",
+    "dominio":"Esencia",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de Apertura",
+    "dominio":"Esencia",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de los Sortilegios",
+    "dominio":"Esencia",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Dominio Espiritual",
+    "dominio":"Esencia",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Percepciones de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Enaltecimiento Físico",
+    "dominio":"Esencia",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Mano de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Ilusiones",
+    "dominio":"Esencia",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de Apertura",
+    "dominio":"Esencia",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de los Sortilegios",
+    "dominio":"Esencia",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Dominio Espiritual",
+    "dominio":"Esencia",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Percepciones de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Maestría en la Detección",
+    "dominio":"Canalizacion",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vías de la Luz y Sonido",
+    "dominio":"Canalizacion",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Serenar Espiritus",
+    "dominio":"Canalizacion",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vías de la Superficie",
+    "dominio":"Canalizacion",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Protecciones",
+    "dominio":"Canalizacion",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Defensa Contra Sortilegios",
+    "dominio":"Canalizacion",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Movimiento de la Naturaleza",
+    "dominio":"Canalizacion",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Sabiduría de la Naturaleza",
+    "dominio":"Canalizacion",
+    "profesion":"Guerrero"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Maestría en la Detección",
+    "dominio":"Canalizacion",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vías de la Luz y Sonido",
+    "dominio":"Canalizacion",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Serenar Espiritus",
+    "dominio":"Canalizacion",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vías de la Superficie",
+    "dominio":"Canalizacion",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Protecciones",
+    "dominio":"Canalizacion",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Defensa Contra Sortilegios",
+    "dominio":"Canalizacion",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Movimiento de la Naturaleza",
+    "dominio":"Canalizacion",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Sabiduría de la Naturaleza",
+    "dominio":"Canalizacion",
+    "profesion":"Explorador"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Dominio de las Sendas",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias del Movimiento",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Maneras de la Naturaleza",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de la Naturaleza",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Maestría en la Detección",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vías de la Luz y Sonido",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Serenar Espiritus",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vías de la Superficie",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Protecciones",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Defensa Contra Sortilegios",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Movimiento de la Naturaleza",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Sabiduría de la Naturaleza",
+    "dominio":"Canalizacion",
+    "profesion":"Montaraz"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Canciones de Control",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Conocimiento de los Objetos",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Conocimiento",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Control del Sonido",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Enaltecimiento Físico",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Mano de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Ilusiones",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de Apertura",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de los Sortilegios",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Dominio Espiritual",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Percepciones de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Bardo"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Control de las Plantas",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Canalización Directa",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Control Animal",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vías de los Musculos y Huesos",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vías de la Sangre",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vás de los Organos",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Purificaciones",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Creaciones",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Maestría en la Detección",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vías de la Luz y Sonido",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Serenar Espiritus",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vías de la Superficie",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Protecciones",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Defensa Contra Sortilegios",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Movimiento de la Naturaleza",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Sabiduría de la Naturaleza",
+    "dominio":"Canalizacion",
+    "profesion":"Animista"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Ley de la Tierra",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Ley del Hielo",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Ley de la Luz",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Ley del Fuego",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Puente Sublime",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Ley del Agua",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Cambio Vital",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Ley del Viento",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Enaltecimiento Físico",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Mano de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Ilusiones",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de Apertura",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de los Sortilegios",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Vias de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Dominio Espiritual",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    },
+    {
+    "model": "CreacionPJ.Sortilegios",
+    "fields": {
+    "lista":"Percepciones de la Esencia",
+    "dominio":"Esencia",
+    "profesion":"Mago"
+    }
+    }
+    ]
+    

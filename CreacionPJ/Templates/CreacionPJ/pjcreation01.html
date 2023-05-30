@@ -1,0 +1,80 @@
+{% extends "CreacionPJ/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="Conteiner01">
+    <table class="Formulario_DB">
+        <thead>
+            <tr>
+                <th colspan="2"><h2>DATOS BÁSICOS</h2></th>
+            </tr>
+        </thead>   
+        <tbody>
+            <form action="{% url 'PJCreation02' %}" method="POST"> {% csrf_token %}
+                <tr>
+                    <td class="Col1">{{ form.nombre_pj.label_tag }}</td>
+                    <td class="Col2">{{ form.nombre_pj }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.genero.label_tag }}</td>
+                    <td class="Col2">{{ form.genero }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.estatura.label_tag }}</td>
+                    <td class="Col2">{{ form.estatura }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.peso.label_tag }}</td>
+                    <td class="Col2">{{ form.peso }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.edad.label_tag }}</td>
+                    <td class="Col2">{{ form.edad }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.pelo.label_tag }}</td>
+                    <td class="Col2">{{ form.pelo }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.ojos.label_tag }}</td>
+                    <td class="Col2">{{ form.ojos }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.especial_fisico.label_tag }}</td>
+                    <td class="Col2">{{ form.especial_fisico }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.personalidad.label_tag }}</td>
+                    <td class="Col2">{{ form.personalidad }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.motivacion.label_tag }}</td>
+                    <td class="Col2">{{ form.motivacion }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.alineamiento.label_tag }}</td>
+                    <td class="Col2">{{ form.alineamiento }}</td>
+                </tr>
+                <tr>
+                    <td class="Col1">{{ form.status.label_tag }}</td>
+                    <td class="Col2">{{ form.status }}</td>
+                </tr>        
+                <tr>
+                    <td class="Col1">{{ form.familia.label_tag }}</td>
+                    <td class="Col2">{{ form.familia }}</td>
+                </tr>        
+                <tr>
+                    <td class="Col1">{{ form.experiencia.label_tag }}</td>
+                    <td class="Col2">{{ form.experiencia }}</td>
+                </tr> 
+                <tr>
+                    <td colspan="2" id="celda_btn_success"><button type="submit" class="btn-success">SIGUIENTE</button></td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

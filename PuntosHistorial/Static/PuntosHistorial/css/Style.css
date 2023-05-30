@@ -1,0 +1,103 @@
+/*
+- Las etiquetas se indican con el nombre sin prefijo
+- Las clases se indican con el nombre con el prefijo "."
+- Los objetos se indican con el "id" con el prefijo "#"
+
+- 1 rem = 16 px
+
+*/
+
+/*---------------------------------------------------------*/
+/*                           BODY                          */
+/*---------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+  font-family: 'Lora';
+  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/wallpaper1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*---------------------------------------------------------*/
+/*--               CUERPO DE LA PAGINA (BODY)              */
+/*---------------------------------------------------------*/
+
+
+/*---------------------------------------------------------*/
+/*                   PUNTOS DE HISTORIAL                   */
+/*---------------------------------------------------------*/
+
+.Conteiner05{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border: #fff;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.Tabla_PDH{
+  border-collapse: collapse;
+  margin:auto;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px;
+}
+
+.Tabla_PDH thead{
+  color: white;
+  margin-bottom: 15px;
+  height: 60px;
+}
+
+.Tabla_PDH .celda_boton_ph{
+  text-align: center;
+  height: 75px;
+}
+
+.Tabla_PDH .boton_ph{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 10px;
+  width: 60%;
+  color: #fff;
+  font-weight: 900;
+  background-color: rgb(92, 184, 92);
+  border-color: rgb(92, 184, 92);
+  font-size: 1.25rem;
+}
+
+.Tabla_PDH .boton_ph:hover{
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.Tabla_PDH td{
+  border-top-color: #fff;
+  border-top-width: 2px;
+  border-top-style: solid;
+}

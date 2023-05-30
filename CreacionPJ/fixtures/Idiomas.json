@@ -1,0 +1,643 @@
+[
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Enano",
+    "idiomas":"Khuzdul",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Enano",
+    "idiomas":"Sindarín",
+    "grados":3
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Enano",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Umli",
+    "idiomas":"Umítico",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Umli",
+    "idiomas":"Oestrón",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Umli",
+    "idiomas":"Labba",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Umli",
+    "idiomas":"Khuzdul",
+    "grados":1
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Noldor",
+    "idiomas":"Quenya",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Noldor",
+    "idiomas":"Adunaico",
+    "grados":3
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Noldor",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Noldor",
+    "idiomas":"Sindarín",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Sindar",
+    "idiomas":"Sindarín",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Sindar",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Sindar",
+    "idiomas":"Quenya",
+    "grados":3
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Sindar",
+    "idiomas":"Silvano",
+    "grados":4
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Silvano",
+    "idiomas":"Silvano",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Silvano",
+    "idiomas":"Oestrón",
+    "grados":4
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Silvano",
+    "idiomas":"Quenya",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Elfos Silvano",
+    "idiomas":"Sindarín",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Medio Elfos",
+    "idiomas":"Sindarín",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Medio Elfos",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Medio Elfos",
+    "idiomas":"Quenya",
+    "grados":3
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Hobbit",
+    "idiomas":"Kuduk",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Hobbit",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Beórnidas",
+    "idiomas":"Atliduk",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Beórnidas",
+    "idiomas":"Nahaiduk",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Beórnidas",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Beórnidas",
+    "idiomas":"Waildyth",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Núm. Negros",
+    "idiomas":"Adunaico",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Núm. Negros",
+    "idiomas":"Haradaico",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Núm. Negros",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Corsarios",
+    "idiomas":"Adunaico",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Corsarios",
+    "idiomas":"Haradaico",
+    "grados":4
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Corsarios",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Dorwinrim",
+    "idiomas":"Logathig",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Dorwinrim",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Dúnedain",
+    "idiomas":"Adunaico",
+    "grados":4
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Dúnedain",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Dúnedain",
+    "idiomas":"Quenya",
+    "grados":1
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Dúnedain",
+    "idiomas":"Sindarín",
+    "grados":4
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Dunledinos",
+    "idiomas":"Dunael",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Dunledinos",
+    "idiomas":"Oestrón",
+    "grados":4
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Hombres del Este",
+    "idiomas":"Logathig",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Hombres del Este",
+    "idiomas":"Oestrón",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Haradrim del Norte",
+    "idiomas":"Haradaico",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Haradrim del Norte",
+    "idiomas":"Apysaico",
+    "grados":4
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Haradrim del Norte",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Haradrim del Sur",
+    "idiomas":"Apysaico",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Haradrim del Sur",
+    "idiomas":"Haradaico",
+    "grados":3
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Haradrim del Sur",
+    "idiomas":"Oestrón",
+    "grados":3
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Lossoth",
+    "idiomas":"Labba",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Lossoth",
+    "idiomas":"Oestrón",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Lossoth",
+    "idiomas":"Sindarín",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Rohirrim",
+    "idiomas":"Rohírrico",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Rohirrim",
+    "idiomas":"Dunael",
+    "grados":1
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Rohirrim",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Campesinos",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Burgueses",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Variags",
+    "idiomas":"Varadja",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Variags",
+    "idiomas":"Haradaico",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Variags",
+    "idiomas":"Oestrón",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"H. de los Bosques",
+    "idiomas":"Nahaiduk",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"H. de los Bosques",
+    "idiomas":"Oestrón",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"H. de los Bosques",
+    "idiomas":"Sindarín",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Woses",
+    "idiomas":"Pukael",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Woses",
+    "idiomas":"Dunael",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Woses",
+    "idiomas":"Oestrón",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Orcos",
+    "idiomas":"Orco",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Orcos",
+    "idiomas":"Oestrón",
+    "grados":3
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Uruk-Hai",
+    "idiomas":"Lengua Negra",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Uruk-Hai",
+    "idiomas":"Orco",
+    "grados":4
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Uruk-Hai",
+    "idiomas":"Oestrón",
+    "grados":4
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Medio Orcos",
+    "idiomas":"Oestrón",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Medio Orcos",
+    "idiomas":"Lengua Negra",
+    "grados":2
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Medio Orcos",
+    "idiomas":"Orco",
+    "grados":3
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Trolls",
+    "idiomas":"Oestrón",
+    "grados":4
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Olog-Hai",
+    "idiomas":"Lengua Negra",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Olog-Hai",
+    "idiomas":"Oestrón",
+    "grados":3
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Medio Trolls",
+    "idiomas":"Lengua Negra",
+    "grados":5
+    }
+    },
+    {
+    "model": "CreacionPJ.RazasIdiomas",
+    "fields": {
+    "raza":"Medio Trolls",
+    "idiomas":"Oestrón",
+    "grados":3
+    }
+    }
+    ]
+    
