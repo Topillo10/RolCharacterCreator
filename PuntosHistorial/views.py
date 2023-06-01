@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from CreacionPJ.models import RazasTabla1
 from GuardarPersonaje.models import Personaje, Personaje_HabSec, Personaje_Idiomas, Personaje_Sort
+from ImprimirHoja.views import dibujar_hoja
 
 # Create your views here.
 
@@ -8,6 +9,8 @@ def puntos_de_historial(request):
     nombre_pj=request.session.get('nombre_pj')
     usuario=request.session.get('usuario')
     nivel=request.session.get('nivel')
+    
+    dibujar_hoja(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel)
 
     raza = Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).raza
     puntos_de_historial=RazasTabla1.objects.get(raza__exact=raza).puntos_de_historial

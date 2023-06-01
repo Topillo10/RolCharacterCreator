@@ -4,15 +4,15 @@
 	"fields":{
 		"hab_sec":"Acrobacias",
 		"caracteristica":1,
-		"tipo":"Atleticas"
+		"tipo":"atleticas"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Actividadesconanimales",
+		"hab_sec":"Actividades con animales",
 		"caracteristica":4,
-		"tipo":"Exteriores"
+		"tipo":"exteriores"
 		}
 	},
 	{
@@ -20,7 +20,7 @@
 	"fields":{
 		"hab_sec":"Actuar",
 		"caracteristica":5,
-		"tipo":"Sociales"
+		"tipo":"sociales"
 		}
 	},
 	{
@@ -28,7 +28,7 @@
 	"fields":{
 		"hab_sec":"Administración",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
@@ -36,7 +36,7 @@
 	"fields":{
 		"hab_sec":"Alquimia",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
@@ -44,7 +44,7 @@
 	"fields":{
 		"hab_sec":"Antropología",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
@@ -52,7 +52,7 @@
 	"fields":{
 		"hab_sec":"Arquitectura",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
@@ -60,15 +60,15 @@
 	"fields":{
 		"hab_sec":"Artesanía",
 		"caracteristica":1,
-		"tipo":"Manuales"
+		"tipo":"manuales"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"BarridoyLanzamientos",
+		"hab_sec":"Barrido y Lanzamientos",
 		"caracteristica":1,
-		"tipo":"Artesmarciales"
+		"tipo":"artes_marciales"
 		}
 	},
 	{
@@ -76,23 +76,23 @@
 	"fields":{
 		"hab_sec":"Cambiante",
 		"caracteristica":5,
-		"tipo":"Especiales"
+		"tipo":"especiales"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Cantar&Baile",
+		"hab_sec":"Cantar & Baile",
 		"caracteristica":5,
-		"tipo":"Artísticas"
+		"tipo":"artisticas"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Ceremonias&Rituales",
+		"hab_sec":"Ceremonias & Rituales",
 		"caracteristica":4,
-		"tipo":"Religiosas"
+		"tipo":"religiosas"
 		}
 	},
 	{
@@ -100,7 +100,7 @@
 	"fields":{
 		"hab_sec":"Charlatanería",
 		"caracteristica":3,
-		"tipo":"Sociales"
+		"tipo":"sociales"
 		}
 	},
 	{
@@ -108,47 +108,47 @@
 	"fields":{
 		"hab_sec":"Comercio/Negociar",
 		"caracteristica":5,
-		"tipo":"Sociales"
+		"tipo":"sociales"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Conocimientocallejero",
+		"hab_sec":"Conocimiento callejero",
 		"caracteristica":3,
-		"tipo":"Callejeras"
+		"tipo":"callejeras"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Conocimientodecuevas",
+		"hab_sec":"Conocimiento de cuevas",
 		"caracteristica":3,
-		"tipo":"Exteriores"
+		"tipo":"exteriores"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"ConocimientodelaNaturaleza",
+		"hab_sec":"Conocimiento de la Naturaleza",
 		"caracteristica":3,
-		"tipo":"Exteriores"
+		"tipo":"exteriores"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Conocimientodelcielo",
+		"hab_sec":"Conocimiento del cielo",
 		"caracteristica":3,
-		"tipo":"Exteriores"
+		"tipo":"exteriores"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Construirtrampas",
+		"hab_sec":"Construir trampas",
 		"caracteristica":3,
-		"tipo":"Exteriores"
+		"tipo":"exteriores"
 		}
 	},
 	{
@@ -156,7 +156,7 @@
 	"fields":{
 		"hab_sec":"Contorsionismo",
 		"caracteristica":1,
-		"tipo":"Atleticas"
+		"tipo":"atleticas"
 		}
 	},
 	{
@@ -164,15 +164,15 @@
 	"fields":{
 		"hab_sec":"Cordeleria",
 		"caracteristica":1,
-		"tipo":"Manuales"
+		"tipo":"manuales"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Defensaadrenal",
+		"hab_sec":"Defensa adrenal",
 		"caracteristica":10,
-		"tipo":"Artesmarciales"
+		"tipo":"artes_marciales"
 		}
 	},
 	{
@@ -180,7 +180,7 @@
 	"fields":{
 		"hab_sec":"Diplomacia",
 		"caracteristica":3,
-		"tipo":"Sociales"
+		"tipo":"sociales"
 		}
 	},
 	{
@@ -188,7 +188,7 @@
 	"fields":{
 		"hab_sec":"Falsificación",
 		"caracteristica":3,
-		"tipo":"Callejeras"
+		"tipo":"callejeras"
 		}
 	},
 	{
@@ -196,7 +196,7 @@
 	"fields":{
 		"hab_sec":"Forrajear",
 		"caracteristica":4,
-		"tipo":"Exteriores"
+		"tipo":"exteriores"
 		}
 	},
 	{
@@ -204,7 +204,7 @@
 	"fields":{
 		"hab_sec":"Frenesí",
 		"caracteristica":5,
-		"tipo":"Especiales"
+		"tipo":"especiales"
 		}
 	},
 	{
@@ -212,23 +212,23 @@
 	"fields":{
 		"hab_sec":"Geografía",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"GolpeIalIV",
+		"hab_sec":"Golpe I al IV",
 		"caracteristica":0,
-		"tipo":"Artesmarciales"
+		"tipo":"artes_marciales"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Hacerflechas",
+		"hab_sec":"Hacer flechas",
 		"caracteristica":1,
-		"tipo":"Manuales"
+		"tipo":"manuales"
 		}
 	},
 	{
@@ -236,15 +236,15 @@
 	"fields":{
 		"hab_sec":"Heráldica",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"HerbologíayCocinar",
+		"hab_sec":"Herbología y Cocinar",
 		"caracteristica":4,
-		"tipo":"Manuales"
+		"tipo":"manuales"
 		}
 	},
 	{
@@ -252,7 +252,7 @@
 	"fields":{
 		"hab_sec":"Herreria",
 		"caracteristica":0,
-		"tipo":"Manuales"
+		"tipo":"manuales"
 		}
 	},
 	{
@@ -260,7 +260,7 @@
 	"fields":{
 		"hab_sec":"Historia",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
@@ -268,7 +268,7 @@
 	"fields":{
 		"hab_sec":"Investigación",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
@@ -276,7 +276,7 @@
 	"fields":{
 		"hab_sec":"Jugar/Estrategia",
 		"caracteristica":3,
-		"tipo":"Callejeras"
+		"tipo":"callejeras"
 		}
 	},
 	{
@@ -284,23 +284,23 @@
 	"fields":{
 		"hab_sec":"Liderazgo",
 		"caracteristica":5,
-		"tipo":"Sociales"
+		"tipo":"sociales"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Magiaconarmadura",
+		"hab_sec":"Magia con armadura",
 		"caracteristica":10,
-		"tipo":"Especiales"
+		"tipo":"especiales"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Maña&Robarbolsillos",
+		"hab_sec":"Maña & Robar bolsillos",
 		"caracteristica":5,
-		"tipo":"Callejeras"
+		"tipo":"callejeras"
 		}
 	},
 	{
@@ -308,7 +308,7 @@
 	"fields":{
 		"hab_sec":"Medicina",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
@@ -316,7 +316,7 @@
 	"fields":{
 		"hab_sec":"Meditación",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
@@ -324,15 +324,15 @@
 	"fields":{
 		"hab_sec":"Mendigar",
 		"caracteristica":5,
-		"tipo":"Callejeras"
+		"tipo":"callejeras"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Mitosyleyendas",
+		"hab_sec":"Mitos y leyendas",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
@@ -340,15 +340,15 @@
 	"fields":{
 		"hab_sec":"Música",
 		"caracteristica":1,
-		"tipo":"Artísticas"
+		"tipo":"artisticas"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Narración&Poesía",
+		"hab_sec":"Narración & Poesía",
 		"caracteristica":5,
-		"tipo":"Artísticas"
+		"tipo":"artisticas"
 		}
 	},
 	{
@@ -356,7 +356,7 @@
 	"fields":{
 		"hab_sec":"Navegar",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
@@ -364,7 +364,7 @@
 	"fields":{
 		"hab_sec":"Ocultismo",
 		"caracteristica":4,
-		"tipo":"Religiosas"
+		"tipo":"religiosas"
 		}
 	},
 	{
@@ -372,15 +372,15 @@
 	"fields":{
 		"hab_sec":"Oratoria",
 		"caracteristica":5,
-		"tipo":"Sociales"
+		"tipo":"sociales"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"PrimerosAuxilios",
+		"hab_sec":"Primeros Auxilios",
 		"caracteristica":4,
-		"tipo":"Exteriores"
+		"tipo":"exteriores"
 		}
 	},
 	{
@@ -388,7 +388,7 @@
 	"fields":{
 		"hab_sec":"Religión",
 		"caracteristica":4,
-		"tipo":"Religiosas"
+		"tipo":"religiosas"
 		}
 	},
 	{
@@ -396,7 +396,7 @@
 	"fields":{
 		"hab_sec":"Remar",
 		"caracteristica":0,
-		"tipo":"Atleticas"
+		"tipo":"atleticas"
 		}
 	},
 	{
@@ -404,7 +404,7 @@
 	"fields":{
 		"hab_sec":"Seducción",
 		"caracteristica":5,
-		"tipo":"Sociales"
+		"tipo":"sociales"
 		}
 	},
 	{
@@ -412,7 +412,7 @@
 	"fields":{
 		"hab_sec":"Señales",
 		"caracteristica":3,
-		"tipo":"Exteriores"
+		"tipo":"exteriores"
 		}
 	},
 	{
@@ -420,7 +420,7 @@
 	"fields":{
 		"hab_sec":"Supervivencia",
 		"caracteristica":4,
-		"tipo":"Exteriores"
+		"tipo":"exteriores"
 		}
 	},
 	{
@@ -428,47 +428,47 @@
 	"fields":{
 		"hab_sec":"Tácticas",
 		"caracteristica":3,
-		"tipo":"Académicas"
+		"tipo":"academicas"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Tallarmadera",
+		"hab_sec":"Tallar madera",
 		"caracteristica":1,
-		"tipo":"Manuales"
+		"tipo":"manuales"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Tallarpiedra",
+		"hab_sec":"Tallar piedra",
 		"caracteristica":1,
-		"tipo":"Manuales"
+		"tipo":"manuales"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Trabajarelcuero",
+		"hab_sec":"Trabajar el cuero",
 		"caracteristica":1,
-		"tipo":"Manuales"
+		"tipo":"manuales"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Tratoconanimales",
+		"hab_sec":"Trato con animales",
 		"caracteristica":4,
-		"tipo":"Exteriores"
+		"tipo":"exteriores"
 		}
 	},
 	{
 	"model":"CreacionPJ.Habilidades_Secundarias",
 	"fields":{
-		"hab_sec":"Velocidadadrenal",
+		"hab_sec":"Velocidad adrenal",
 		"caracteristica":5,
-		"tipo":"Artesmarciales"
+		"tipo":"artes_marciales"
 		}
 	},
 	{
@@ -476,7 +476,7 @@
 	"fields":{
 		"hab_sec":"Voluntad",
 		"caracteristica":5,
-		"tipo":"Especiales"
+		"tipo":"especiales"
 		}
 	}
 ]

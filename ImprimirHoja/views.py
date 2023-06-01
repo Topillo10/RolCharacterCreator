@@ -1,4 +1,4 @@
-from CreacionPJ.models import Profesiones, RazasTabla1, RazasTabla2, RazasTabla3, RazasTabla4
+from CreacionPJ.models import Profesiones, RazasTabla1, RazasTabla2, RazasTabla3, RazasTabla4, Habilidades_Secundarias
 from GuardarPersonaje.models import Personaje, Personaje_HabSec, Personaje_Idiomas, Personaje_Sort
 from PIL import Image, ImageDraw, ImageFont
 from reportlab.pdfgen import canvas
@@ -7,40 +7,50 @@ import os
 
 def dibujar_hoja(nombre_pj, usuario, nivel):
     
-    pj= Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel)
-    personaje=[
-        value for key, value in pj.__dict__.items()
-        if key not in ['id', '_state']
-    ]
+    # pj= Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel)
+    # personaje=[
+    #     value for key, value in pj.__dict__.items()
+    #     if key not in ['id', '_state']
+    # ]
     
-    inst_habilidades_secundarias=Personaje_HabSec.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
-    lista_hab_sec = [[habilidad_secundaria.hab_sec, habilidad_secundaria.grados] for habilidad_secundaria in inst_habilidades_secundarias]
+    # inst_habilidades_secundarias=Personaje_HabSec.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
+    # lista_hab_sec = [[habilidad_secundaria.hab_sec, habilidad_secundaria.grados] for habilidad_secundaria in inst_habilidades_secundarias]
     
-    inst_idiomas=Personaje_Idiomas.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
-    lista_idiomas = [[idioma.idiomas, idioma.grados] for idioma in inst_idiomas]
+    # inst_idiomas=Personaje_Idiomas.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
+    # lista_idiomas = [[idioma.idiomas, idioma.grados] for idioma in inst_idiomas]
     
-    inst_sortilegios=Personaje_Sort.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
-    lista_sortilegios = [sortilegio.lista for sortilegio in inst_sortilegios]
+    # inst_sortilegios=Personaje_Sort.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
+    # lista_sortilegios = [sortilegio.lista for sortilegio in inst_sortilegios]
 
-    personaje=[
-        personaje[0:7],         #[0]
-        personaje[7:26],        #[1]
-        personaje[26:53],       #[2]
-        lista_hab_sec,          #[3]
-        personaje[53:86],       #[4]
-        [
-        personaje[86:91],       #[5][0]
-        personaje[91:98],       #[5][1]
-        personaje[98:102],      #[5][2]
-        personaje[102:106],     #[5][3]
-        personaje[106:109],     #[5][4]
-        personaje[109:113],     #[5][5]
-        [],                     #[5][6]
-        personaje[113:119]      #[5][7]
-        ],
-        lista_idiomas,          #[6]
-        lista_sortilegios,      #[7]
-        ]
+    # personaje=[
+    #     personaje[0:7],         #[0]
+    #     personaje[7:26],        #[1]
+    #     personaje[26:53],       #[2]
+    #     lista_hab_sec,          #[3]
+    #     personaje[53:86],       #[4]
+    #     [
+    #     personaje[86:91],       #[5][0]
+    #     personaje[91:98],       #[5][1]
+    #     personaje[98:102],      #[5][2]
+    #     personaje[102:106],     #[5][3]
+    #     personaje[106:109],     #[5][4]
+    #     personaje[109:113],     #[5][5]
+    #     [],                     #[5][6]
+    #     personaje[113:119]      #[5][7]
+    #     ],
+    #     lista_idiomas,          #[6]
+    #     lista_sortilegios,      #[7]
+    #     ]
+    
+    personaje=[[77,90,74,79,90,98,75],
+               ["Constantino Clavoluz","Topillo","Burgueses",1.8,65,"M",29,"Negro","Negros","Manos con Cicatrices","","","","","Felisardo","Explorador",8,"Esencia",110000],
+               [2,0,0,0,0,7,0,0,10,1,0,0,7,6,5,7,11,13,7,1,1,1,0,8,2,"[6,6,2,8,7,10,4,5,5,6,3,5,4,4,2,3,1]","[]"],
+               [["Maña & Robar bolsillos",15,0],["Acrobacias",14,0],["Jugar/Estrategia",15,0],["Comercio/Negociar",14,0],["Herreria",11,0]],
+               [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+               [[0,0,0,0,0],[10,0,0,15,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0],[0,0,0,0],[0,0,0,0,0],[0,0,0,0,0,0]],
+               [["Oestrón",5]],
+               ["Ilusiones","Enaltecimiento Físico"]]
+
     
     image = Image.open("./ImprimirHoja/Static/ImprimirHoja/img/Character_Sheet.png")
 
@@ -213,8 +223,8 @@ def dibujar_hoja(nombre_pj, usuario, nivel):
             tiradas=eval(tiradas_des_fis)
             esp_hab_prim_1=personaje[4][25]
             draw.text((ejex+558, ejey+correc), str(bonif(personaje[0][2])+caracteristicas_raza[2]), fill=(0, 0, 0), font=font2, anchor ="ms") #caracteristica
-            draw.text((ejex+608, ejey+correc), str(pxn*personaje[1][16]), fill=(0, 0, 0), font=font2, anchor ="ms") #profxnivel
-            total=sum(tiradas)+bonif(personaje[0][2])+caracteristicas_raza[4]+pxn+esp_hab_prim_2+esp_hab_prim_1+objeto
+            draw.text((ejex+608, ejey+correc), str(pxn), fill=(0, 0, 0), font=font2, anchor ="ms") #profxnivel
+            total=sum(tiradas)+bonif(personaje[0][2])+caracteristicas_raza[4]+pxn+esp_hab_prim_2+esp_hab_prim_1+objeto+5
         for i in range(len(tiradas)):
             if i < 10:
                 draw.text((ejex+i*19+i//2, ejey), str(tiradas[i]), fill=(0, 0, 0), font=font2, anchor ="ms")
@@ -245,6 +255,71 @@ def dibujar_hoja(nombre_pj, usuario, nivel):
         sortilegios=personaje[7]
         for i in range(len(sortilegios)):
             draw.text((ejex, ejey+i*48), str(sortilegios[i]), fill=(0, 0, 0), font=font2, anchor ="ms")
+
+    def dibujar_hab_sec(ejex,ejey,paso_correc,coef_correc):
+        hab_sec=personaje[3]
+        
+        resultado_hab=[]
+        
+        font = ImageFont.truetype("../ImprimirHoja/Static/ImprimirHoja/Fonts/arial.ttf", 36) # Fuente y tamaño
+        font2 = ImageFont.truetype("../ImprimirHoja/Static/ImprimirHoja/Fonts/arial.ttf", 14) # Fuente y tamaño
+        
+        for j in range(len(hab_sec)):
+            resultado=-25
+            for cont in range(hab_sec[j][1]):
+                max=hab_sec[j][1]-1
+                if cont < 10:
+                    draw.text((ejex+cont*14+cont//2, ejey+22*j+(j//paso_correc)*coef_correc), "•", fill=(0, 0, 0), font=font)
+                    resultado= (cont + 1) * 5
+                elif cont < 15:
+                    draw.text((ejex+10+cont*14+cont//2, ejey+22*j+(j//paso_correc)*coef_correc), "•", fill=(0, 0, 0), font=font)
+                    resultado= (cont -9) * 2 + 50
+                elif cont < 20:
+                    if cont == max:
+                        grado_residual=cont-14
+                        draw.text((ejex+262-0.5*coef_correc, ejey+11+23*j), str(grado_residual), fill=(0, 0, 0), font=font2, align ="right")                
+                    resultado= (cont -9) * 2 + 50
+                elif cont == max:
+                    grado_residual=cont-19
+                    draw.text((ejex+262-0.5*coef_correc, ejey+11+23*j), str(grado_residual), fill=(0, 0, 0), font=font2, align ="right")
+                    resultado= (cont -19) + 70
+                else:
+                    pass
+                
+            draw.text((ejex-160-0.5*coef_correc, ejey+11+23*j), str(hab_sec[j][0]), fill=(0, 0, 0), font=font2, align ="right")
+            draw.text((ejex+321-2*coef_correc, ejey+26+23*j), str(resultado), fill=(0, 0, 0), font=font2, anchor ="ms")
+            
+            posicion_caract = Habilidades_Secundarias.objects.get(hab_sec=hab_sec[j][0]).caracteristica #Esto indica el indice de la caracteristica que suma cada habilidad            
+                     
+            tipo=Habilidades_Secundarias.objects.get(hab_sec=hab_sec[j][0]).tipo         
+            pxn=Profesiones.objects.get(profesion=personaje[1][15])
+            pxn = getattr(pxn, tipo)
+            
+            caracteristicas_raza=razas_t1[1:7]
+            caracteristicas=["FUE","AGI","CON","INT","I","PRE","APA"]
+            esp_hab_sec_2=hab_sec[j][2]
+            esp_hab_sec_1=RazasTabla4.objects.get(raza__exact=personaje[1][2])
+            aux=hab_sec[j][0].lower().replace(" ", "_").replace("&", "y").replace("/", "_y_").replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u")
+            esp_hab_sec_1 = getattr(esp_hab_sec_1, aux)
+            
+            objeto=personaje[5][6][j]
+            
+            draw.text((ejex+497-2*coef_correc, ejey+26+23*j), str(esp_hab_sec_1), fill=(0, 0, 0), font=font2, anchor ="ms")
+            draw.text((ejex+590-2*coef_correc, ejey+26+23*j), str(objeto), fill=(0, 0, 0), font=font2, anchor ="ms")
+            draw.text((ejex+452-2*coef_correc, ejey+26+23*j), str(((pxn*personaje[1][16]))), fill=(0, 0, 0), font=font2, anchor ="ms")
+            draw.text((ejex+542-2*coef_correc, ejey+26+23*j), str(esp_hab_sec_2), fill=(0, 0, 0), font=font2, anchor ="ms")
+
+            try:
+                draw.text((ejex+395-2*coef_correc, ejey+26+23*j), str(bonif(personaje[0][posicion_caract])+caracteristicas_raza[posicion_caract]), fill=(0, 0, 0), font=font2, anchor ="ms")
+                draw.text((ejex+370-2*coef_correc, ejey+26+23*j), caracteristicas[posicion_caract], fill=(0, 0, 0), font=font2, anchor ="ms")
+            except IndexError:
+                pass
+            try:
+                total=resultado+bonif(personaje[0][posicion_caract])+caracteristicas_raza[posicion_caract]+pxn*personaje[1][16]+esp_hab_sec_2+esp_hab_sec_1+objeto
+                draw.text((ejex+648-2*coef_correc, ejey+26+23*j), str(total), fill=(0, 0, 0), font=font2, anchor ="ms")            
+            except IndexError:
+                total=resultado+pxn*personaje[1][16]+esp_hab_sec_2+esp_hab_sec_1+objeto
+                draw.text((ejex+648-2*coef_correc, ejey+26+23*j), str(total), fill=(0, 0, 0), font=font2, anchor ="ms")            
 
     def llamar_funciones():
 
@@ -278,8 +353,7 @@ def dibujar_hoja(nombre_pj, usuario, nivel):
         tr=dibujar_tr(910,1622)
         idiomas=dibujar_idiomas(130,344)
         sortilegios=dibujar_sortilegios(120, 650)
-
-        # secundarias=dibujar_gdh(grados_de_hab_sec,510,1374,3,4,6)
+        secundarias=dibujar_hab_sec(510,1374,3,4)
         # return datosbasicos,caracteristicas, mym, armas, generales, subterfugio, magicas, otras, des_fis,pp
     
     llamar_funciones()
