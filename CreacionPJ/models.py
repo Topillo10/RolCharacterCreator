@@ -225,7 +225,7 @@ class Habilidades_Secundarias(models.Model):
 
 class Sortilegios(models.Model):
     lista=models.CharField(max_length=20)
-    dominio=models.CharField(max_length=20)
+    dominio=models.CharField(max_length=30)
     profesion=models.CharField(max_length=20)
     
     def __str__(self):

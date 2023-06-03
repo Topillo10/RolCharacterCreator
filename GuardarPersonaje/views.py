@@ -8,6 +8,7 @@ def guardar_personaje_completo(personaje):
     guardar_sortilegios(personaje[7], personaje[1][0], personaje[1][1], personaje[1][16])
 
 def guardar_personaje(personaje):
+
     Personaje.objects.update_or_create(
         nombre_pj=personaje[1][0],
         usuario=personaje[1][1],

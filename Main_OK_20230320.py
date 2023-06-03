@@ -3,6 +3,16 @@
 ##################################################################################################################
 
 """
+Desde el boton Hab. Esp. de PDH.html me debe llevar a PDH_Hab_Esp.html el cual tendrá un boton "Aceptar" y otro de
+"Rechazar", el aceptar ejecutará la funcion correspondiente y grabará en BD, mientras que el de rechazar redirigirá
+directamente a la BD.
+
+Casos que usan los datos: 1, 26, 65, 67, 92 -----> esto se manejará con if en el template.
+
+"""
+
+
+"""
 Hab Sec: [Hab_Sec, grados, especial]
 """
 
@@ -28,6 +38,7 @@ python manage.py loaddata RazaTabla2.json
 python manage.py loaddata RazaTabla3.json
 python manage.py loaddata RazaTabla4.json
 python manage.py loaddata Sortilegios.json
+python manage.py loaddata Sortilegios2.json
 python manage.py loaddata HabSec.json
 python manage.py loaddata Idiomas.json
 """

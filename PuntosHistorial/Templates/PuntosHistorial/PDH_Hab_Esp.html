@@ -1,0 +1,78 @@
+
+{% extends "CreacionPJ/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<link href="{% static 'PuntosHistorial/css/Style.css' %}" rel="stylesheet">
+
+<div class="Conteiner07">
+    <table class="Tabla_PDH1">
+        <thead>
+            <tr>
+                <th colspan=2><h2>CAPACIDADES ESPECIALES</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <form action="#" method="POST"> {% csrf_token %}
+                <tr>
+                    <td colspan="2" class="celda_boton_pdh1_2"><h3 class="num_pdh1">{{ tirada_original }}</h3></td>
+                </tr>
+                <tr>
+                    <td colspan=2 class="celda_boton_pdh1_3"><h5 class="text_pdh1">{{ hab_esp_completo }}</h5></td>
+                </tr>
+
+                {% if tirada == 1 %}
+                <tr>
+                    <td class="Col1">{{ form.hab_prim.label_tag }}</td>
+                    <td class="Col2">{{ form.hab_prim }}</td>
+                </tr>
+                {% else %}
+                {% if tirada == 26 %}
+                <tr>
+                    <td class="Col1">{{ form.hab_sec.label_tag }}</td>
+                    <td class="Col2">{{ form.hab_sec }}</td>
+                </tr>
+                {% else %}
+                {% if tirada == 46 %}
+                <tr>
+                    <td class="Col1">{{ form.lista.label_tag }}</td>
+                    <td class="Col2">{{ form.lista }}</td>
+                </tr>
+                {% else %}
+                {% if tirada == 65 %}
+                <tr>
+                    <td class="Col1">{{ form.conocimiento.label_tag }}</td>
+                    <td class="Col2">{{ form.conocimiento }}</td>
+                </tr>
+                {% else %}
+                {% if tirada == 67 %}
+                <tr>
+                    <td class="Col1">{{ form.idiomas.label_tag }}</td>
+                    <td class="Col2">{{ form.idiomas }}</td>
+                </tr>
+                {% else %}
+                {% comment %} {% if tirada == 92 %}
+                <tr>
+                    <td class="Col1">{{ form.hab_prim.label_tag }}</td>
+                    <td class="Col2">{{ form.hab_prim }}</td>
+                </tr>
+                {% else %} {% endcomment %}
+                {% comment %} {% if tirada == 100 %}
+                <tr>
+                    <td class="Col1">{{ form.hab_prim.label_tag }}</td>
+                    <td class="Col2">{{ form.hab_prim }}</td>
+                </tr>
+                {% else %} {% endcomment %}
+                <tr>
+                    <td id="celda_btn_success"><button type="submit" class="btn-success">ACEPTAR</button></td>
+                    <td id="celda_btn_success"><button type="button" class="btn-success">RECHAZAR</button></td>
+                </tr>               
+            </form>
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}

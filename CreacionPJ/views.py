@@ -3,7 +3,7 @@ from django.contrib.sessions.models import Session
 from CreacionPJ.models import RazasTabla1, RazasTabla2, RazasTabla3, RazasTabla4, Profesiones, DatosBasicos, RazaYProfesion, RazasIdiomas, Sortilegios
 from GuardarPersonaje.models import Personaje, Personaje_Sort, Personaje_HabSec, Personaje_Idiomas
 import random
-from .forms import DatosBasicosForm, RazaYProfesionForm, CaracteristicasForm, SortilegiosPersonajeForm, IdiomasPersonajeForm
+from CreacionPJ.forms import DatosBasicosForm, RazaYProfesionForm, CaracteristicasForm, SortilegiosPersonajeForm, IdiomasPersonajeForm
 from GuardarPersonaje.views import guardar_personaje, guardar_sortilegios, guardar_idiomas
 from ImprimirHoja.views import dibujar_hoja
 
@@ -488,8 +488,13 @@ def salida(request):
         idiomas=request.POST['idiomas']
         idiomas=eval(idiomas)
         guardar_idiomas(idiomas, nombre_pj, usuario, nivel)
-        # dibujar_hoja(nombre_pj, usuario, nivel)
+        
+        raza = Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).raza
+        puntos_de_historial=RazasTabla1.objects.get(raza__exact=raza).puntos_de_historial
+        pdh=[]
 
+        request.session['pdh']=pdh
+        request.session['puntos_de_historial']=puntos_de_historial
         request.session['nombre_pj']=nombre_pj
         request.session['usuario']=usuario
         request.session['nivel']=nivel

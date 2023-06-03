@@ -15,7 +15,12 @@
             </tr>
         </thead>
         <tbody>
-            <form method="POST"> {% csrf_token %}
+            <form action="{% url 'PDH1' %}" method="POST"> {% csrf_token %}
+                <input type="hidden" name="nombre_pj" value="{{ nombre_pj }}">
+                <input type="hidden" name="usuario" value="{{ usuario }}">
+                <input type="hidden" name="nivel" value="{{ nivel }}">
+                <input type="hidden" name="tirada" value="{{ tirada }}">
+                <input type="hidden" name="pdh" value="1">
                 <tr>
                     <td class="celda_boton_ph"><button id="hab_esp" type="submit" class="boton_ph">Habilidades Especiales</button></td>
                 </tr>

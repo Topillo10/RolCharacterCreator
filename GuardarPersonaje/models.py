@@ -155,3 +155,10 @@ class Personaje_Idiomas(models.Model):
 
     def __str__(self):
         return self.idiomas
+    
+class Personaje_PDH(models.Model):
+    Personaje = models.ForeignKey("Personaje", on_delete=models.CASCADE)
+    pdh=models.CharField(max_length=64)
+
+    def __str__(self):
+        return self.pdh

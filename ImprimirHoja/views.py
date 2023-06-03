@@ -4,52 +4,51 @@ from PIL import Image, ImageDraw, ImageFont
 from reportlab.pdfgen import canvas
 import os
 
-
 def dibujar_hoja(nombre_pj, usuario, nivel):
     
-    # pj= Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel)
-    # personaje=[
-    #     value for key, value in pj.__dict__.items()
-    #     if key not in ['id', '_state']
-    # ]
+    pj= Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel)
+    personaje=[
+        value for key, value in pj.__dict__.items()
+        if key not in ['id', '_state']
+    ]
     
-    # inst_habilidades_secundarias=Personaje_HabSec.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
-    # lista_hab_sec = [[habilidad_secundaria.hab_sec, habilidad_secundaria.grados] for habilidad_secundaria in inst_habilidades_secundarias]
+    inst_habilidades_secundarias=Personaje_HabSec.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
+    lista_hab_sec = [[habilidad_secundaria.hab_sec, habilidad_secundaria.grados] for habilidad_secundaria in inst_habilidades_secundarias]
     
-    # inst_idiomas=Personaje_Idiomas.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
-    # lista_idiomas = [[idioma.idiomas, idioma.grados] for idioma in inst_idiomas]
+    inst_idiomas=Personaje_Idiomas.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
+    lista_idiomas = [[idioma.idiomas, idioma.grados] for idioma in inst_idiomas]
     
-    # inst_sortilegios=Personaje_Sort.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
-    # lista_sortilegios = [sortilegio.lista for sortilegio in inst_sortilegios]
+    inst_sortilegios=Personaje_Sort.objects.filter(Personaje_id=Personaje.objects.get(nombre_pj=nombre_pj,usuario=usuario,nivel=nivel).id)
+    lista_sortilegios = [sortilegio.lista for sortilegio in inst_sortilegios]
 
-    # personaje=[
-    #     personaje[0:7],         #[0]
-    #     personaje[7:26],        #[1]
-    #     personaje[26:53],       #[2]
-    #     lista_hab_sec,          #[3]
-    #     personaje[53:86],       #[4]
-    #     [
-    #     personaje[86:91],       #[5][0]
-    #     personaje[91:98],       #[5][1]
-    #     personaje[98:102],      #[5][2]
-    #     personaje[102:106],     #[5][3]
-    #     personaje[106:109],     #[5][4]
-    #     personaje[109:113],     #[5][5]
-    #     [],                     #[5][6]
-    #     personaje[113:119]      #[5][7]
-    #     ],
-    #     lista_idiomas,          #[6]
-    #     lista_sortilegios,      #[7]
-    #     ]
+    personaje=[
+        personaje[0:7],         #[0]
+        personaje[7:26],        #[1]
+        personaje[26:53],       #[2]
+        lista_hab_sec,          #[3]
+        personaje[53:86],       #[4]
+        [
+        personaje[86:91],       #[5][0]
+        personaje[91:98],       #[5][1]
+        personaje[98:102],      #[5][2]
+        personaje[102:106],     #[5][3]
+        personaje[106:109],     #[5][4]
+        personaje[109:113],     #[5][5]
+        [],                     #[5][6]
+        personaje[113:119]      #[5][7]
+        ],
+        lista_idiomas,          #[6]
+        lista_sortilegios,      #[7]
+        ]
     
-    personaje=[[77,90,74,79,90,98,75],
-               ["Constantino Clavoluz","Topillo","Burgueses",1.8,65,"M",29,"Negro","Negros","Manos con Cicatrices","","","","","Felisardo","Explorador",8,"Esencia",110000],
-               [2,0,0,0,0,7,0,0,10,1,0,0,7,6,5,7,11,13,7,1,1,1,0,8,2,"[6,6,2,8,7,10,4,5,5,6,3,5,4,4,2,3,1]","[]"],
-               [["Maña & Robar bolsillos",15,0],["Acrobacias",14,0],["Jugar/Estrategia",15,0],["Comercio/Negociar",14,0],["Herreria",11,0]],
-               [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-               [[0,0,0,0,0],[10,0,0,15,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0],[0,0,0,0],[0,0,0,0,0],[0,0,0,0,0,0]],
-               [["Oestrón",5]],
-               ["Ilusiones","Enaltecimiento Físico"]]
+    # personaje=[[77,90,74,79,90,98,75],
+    #            ["Constantino Clavoluz","Topillo","Burgueses",1.8,65,"M",29,"Negro","Negros","Manos con Cicatrices","","","","","Felisardo","Explorador",8,"Esencia",110000],
+    #            [2,0,0,0,0,7,0,0,10,1,0,0,7,6,5,7,11,13,7,1,1,1,0,8,2,"[6,6,2,8,7,10,4,5,5,6,3,5,4,4,2,3,1]","[]"],
+    #            [["Maña & Robar bolsillos",15,0],["Acrobacias",14,0],["Jugar/Estrategia",15,0],["Comercio/Negociar",14,0],["Herreria",11,0]],
+    #            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    #            [[0,0,0,0,0],[10,0,0,15,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0],[0,0,0,0],[0,0,0,0,0],[0,0,0,0,0,0]],
+    #            [["Oestrón",5]],
+    #            ["Ilusiones","Enaltecimiento Físico"]]
 
     
     image = Image.open("./ImprimirHoja/Static/ImprimirHoja/img/Character_Sheet.png")
@@ -199,6 +198,7 @@ def dibujar_hoja(nombre_pj, usuario, nivel):
             draw.text((ejex+245, ejey+22*i), str(total_tr), fill=(0, 0, 0), font=font2, anchor ="ms")
     
     def dibujar_des_fis_y_pp(tiradas_des_fis,ejex,ejey,correc,hab):
+        font1 = ImageFont.truetype("../ImprimirHoja/Static/ImprimirHoja/Fonts/arial.ttf", 24) # Fuente y tamaño
         font2 = ImageFont.truetype("../ImprimirHoja/Static/ImprimirHoja/Fonts/arial.ttf", 14) # Fuente y tamaño
         caracteristicas_raza=razas_t1[1:7]
         esp_hab_prim_2=razas_t2[26]
@@ -212,10 +212,10 @@ def dibujar_hoja(nombre_pj, usuario, nivel):
             draw.text((ejex+745, ejey+correc), str(objeto), fill=(0, 0, 0), font=font2, anchor ="ms")
             if personaje[1][17]=="Esencia":
                 draw.text((ejex+558, ejey+correc), str(bonif(personaje[0][3])+caracteristicas_raza[3]), fill=(0, 0, 0), font=font2, anchor ="ms") #caracteristica
-                total=sum(tiradas)+bonif(personaje[0][2])+caracteristicas_raza[3]+pxn+esp_hab_prim_2+esp_hab_prim_1+objeto
+                total=sum(tiradas)+bonif(personaje[0][3])+caracteristicas_raza[3]+pxn+esp_hab_prim_2+esp_hab_prim_1+objeto
             else:
                 draw.text((ejex+558, ejey+correc), str(bonif(personaje[0][4])+caracteristicas_raza[4]), fill=(0, 0, 0), font=font2, anchor ="ms") #caracteristica
-                total=sum(tiradas)+bonif(personaje[0][2])+caracteristicas_raza[4]+pxn+esp_hab_prim_2+esp_hab_prim_1+objeto
+                total=sum(tiradas)+bonif(personaje[0][4])+caracteristicas_raza[4]+pxn+esp_hab_prim_2+esp_hab_prim_1+objeto
         else:
             pxn=prof_t1[28]*personaje[1][16]
             objeto=personaje[5][5][2]
@@ -225,6 +225,7 @@ def dibujar_hoja(nombre_pj, usuario, nivel):
             draw.text((ejex+558, ejey+correc), str(bonif(personaje[0][2])+caracteristicas_raza[2]), fill=(0, 0, 0), font=font2, anchor ="ms") #caracteristica
             draw.text((ejex+608, ejey+correc), str(pxn), fill=(0, 0, 0), font=font2, anchor ="ms") #profxnivel
             total=sum(tiradas)+bonif(personaje[0][2])+caracteristicas_raza[4]+pxn+esp_hab_prim_2+esp_hab_prim_1+objeto+5
+            draw.text((ejex+808, ejey+correc-965), str(total), fill=(0, 0, 0), font=font1, anchor ="ms") #total 2
         for i in range(len(tiradas)):
             if i < 10:
                 draw.text((ejex+i*19+i//2, ejey), str(tiradas[i]), fill=(0, 0, 0), font=font2, anchor ="ms")
@@ -238,7 +239,7 @@ def dibujar_hoja(nombre_pj, usuario, nivel):
         draw.text((ejex+478, ejey+correc), str(sum(tiradas)), fill=(0, 0, 0), font=font2, anchor ="ms") #resultado
         draw.text((ejex+653, ejey+correc), str(esp_hab_prim_1), fill=(0, 0, 0), font=font2, anchor ="ms") #especial raza
         draw.text((ejex+698, ejey+correc), str(esp_hab_prim_2), fill=(0, 0, 0), font=font2, anchor ="ms") #especial           
-        draw.text((ejex+808, ejey+correc), str(total), fill=(0, 0, 0), font=font2, anchor ="ms") #total
+        draw.text((ejex+808, ejey+correc), str(total), fill=(0, 0, 0), font=font2, anchor ="ms") #total 1
     
     def dibujar_idiomas(ejex,ejey):
         font2 = ImageFont.truetype("../ImprimirHoja/Static/ImprimirHoja/Fonts/arial.ttf", 14)
@@ -254,7 +255,7 @@ def dibujar_hoja(nombre_pj, usuario, nivel):
         font2 = ImageFont.truetype("../ImprimirHoja/Static/ImprimirHoja/Fonts/arial.ttf", 14)
         sortilegios=personaje[7]
         for i in range(len(sortilegios)):
-            draw.text((ejex, ejey+i*48), str(sortilegios[i]), fill=(0, 0, 0), font=font2, anchor ="ms")
+            draw.text((ejex, ejey+i*48), str(sortilegios[i]), fill=(0, 0, 0), font=font2, anchor ="ls")
 
     def dibujar_hab_sec(ejex,ejey,paso_correc,coef_correc):
         hab_sec=personaje[3]
@@ -350,11 +351,11 @@ def dibujar_hoja(nombre_pj, usuario, nivel):
         profesion=dibujar_individual(personaje[1][15],130,227)
         nivel=dibujar_individual(personaje[1][16],325,227)
         experiencia=dibujar_individual(personaje[1][18],378,227)
+        dominio=dibujar_individual(personaje[1][17],430,355)
         tr=dibujar_tr(910,1622)
         idiomas=dibujar_idiomas(130,344)
-        sortilegios=dibujar_sortilegios(120, 650)
+        sortilegios=dibujar_sortilegios(50, 650)
         secundarias=dibujar_hab_sec(510,1374,3,4)
-        # return datosbasicos,caracteristicas, mym, armas, generales, subterfugio, magicas, otras, des_fis,pp
     
     llamar_funciones()
 
@@ -365,4 +366,3 @@ def dibujar_hoja(nombre_pj, usuario, nivel):
     pdf.showPage()
     pdf.save()
     os.remove("./ImprimirHoja/Output/%s - Lvl. %i.png" %(personaje[1][0], personaje[1][16]))
-
